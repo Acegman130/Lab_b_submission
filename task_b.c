@@ -11,7 +11,7 @@ int main(void){
 	// Your code below here
 	double radius = 0; //creates the variable radius
 	radius = 2.2; // sets the radius to constant 2.2
-	volume = height*(M_PI * radius * radius); // calculate the volume of cylinder 
+	volume = abs(height)*(M_PI * radius * radius); // calculate the volume of cylinder 
 	
 	
 	// Do not edit below here
