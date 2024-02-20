@@ -1,7 +1,7 @@
 #define _USE_MATH_DEFINES
 #include <stdio.h>
 #include <math.h>
-#include <assert.h>
+
 int main(void){
     double height = 0;
 	double volume = 0;
@@ -10,7 +10,12 @@ int main(void){
 	
 	
 	// Your code below here
-    assert(height >= 0);
+    if(height<0)
+    {
+        height = -height;
+    }
+
+
 	double radius = 0; //creates the variable radius
 	radius = 2.2; // sets the radius to constant 2.2
 	volume = height*(M_PI * radius * radius); // calculate the volume of cylinder 
